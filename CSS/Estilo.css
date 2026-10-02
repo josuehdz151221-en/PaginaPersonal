@@ -1,0 +1,361 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #222;
+    background: #f5f5f5;
+    line-height: 1.6;
+}
+.Autobiografia{
+    display: none;
+}
+/*hero*/
+.pagina {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+.pagina-contenido {
+    max-width: 800px;
+    padding: 30px;
+}
+.pagina h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+.subtitulo {
+    letter-spacing: 5px;
+    font-size: 1rem;
+}
+.pagina p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+/*boton*/
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+/*intro*/
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 100px 30px;
+}
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+/*secciones*/
+.secciones {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 30px;
+}
+/*CARDS*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .logo h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.subtitulo-header {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.nav-links .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-links .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.10);
+          transition: transform 0.5s ease, box-shadow 0.5s ease;
+       
+}
+
+
+.tarjeta-imagen {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.tarjeta:hover {
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.gustos {
+    background-image: url("../images/gustos.jpeg");
+}
+
+.hobbies {
+    background-image: url("../images/hobbies.jpeg");
+}
+
+.lugares {
+    background-image: url("../images/lugares.jpeg");
+}
+
+.peliculas {
+    background-image: url("../images/peliculas.jpeg");
+}
+.animated-gradient {
+  position: relative;
+  background: linear-gradient(45deg, #0400fa 0%, #0062ff 50%, #00ffee 100%);
+  background-size: 200% 200%;
+  animation: gradient-aurora 8s ease alternate infinite;
+  overflow: hidden;
+}
+@keyframes gradient-aurora {
+  0% { background-position: 0% 50%; filter: brightness(100%) saturate(100%); }
+  25% { background-position: 50% 0%; filter: brightness(110%) saturate(120%); }
+  50% { background-position: 100% 50%; filter: brightness(120%) saturate(140%); }
+  75% { background-position: 50% 100%; filter: brightness(110%) saturate(120%); }
+  100% { background-position: 0% 50%; filter: brightness(100%) saturate(100%); }
+}
+.tarjeta-contenido {
+    padding: 30px;
+}
+.tarjeta-contenido span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.tarjeta h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+.tarjeta-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*INFO*/
+.infos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+.infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;  
+    margin-top: 15px;            
+    margin: 40px auto;       
+    padding: 0 20px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(133, 180, 196);
+    border-radius: 10px;
+    padding: 20px;
+    width: 230px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+.info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+    color: #111;
+}
+.info p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #222;
+    line-height: 1.4;
+}
+.tarjeta-comida {
+    background-color: #00fbc9;
+}
+
+.tarjeta-deportes {
+    background-color: #00fbc9;;
+}
+
+.tarjeta-videojuegos {
+    background-color: #00fbc9;;
+}
+.info img {
+    display: inline-block;
+    width: 100%;             
+    height: 140px;         
+    object-fit: cover;      
+    border-radius: 8px;     
+    margin-bottom: 12px;    
+}
+/*lugares*/
+#cursos h2{
+    text-align: center;
+    color: var(--color_principal);
+}
+.grid_cursos2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.tarjeta_curso2{
+    background-color: var(--color_claro);
+    border:1px solid var(--color_borde) ;
+    border-radius: 8px;
+    flex: 1 1 280px; /* grow -> shirnk -> basis*/
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    /*aqui efecto*/
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+}
+.tarjeta_curso2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.tarjeta_curso2 img{
+    width: 100%;
+    height: 200pxpx;
+    object-fit: cover;
+    display: block;
+}
+.info_curso2{
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.info_curso2 h3{
+    font-size: 1.3rem;
+    color: var(--color_principal);
+}
+.info_curso2 p{
+    margin-bottom: 15px;
+    flex-grow: 1;
+    color: var(--color_obscuro);
+}
+.nivel2{
+    background-color: var(--color_fondo);
+    color: var(--color_principal);
+    font-family: var(--fuente_titulos);
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    align-self: center;
+
+}
+/*TABLAS*/
+table { 
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 2px solid #eee1e1;
+    text-align: left;
+}
+
+table thead {
+    background-color: #bf00ff; /* Verde Luigi */
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #fff9e6;
+}
+/*PELICULAS*/
+#intereses h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#intereses {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto; 
+}
+.grid_cursos2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+.fotoportada {
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    border: opx; 
+    margin: 0 auto 20px auto;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.fotoportada:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.30);
+}
+/*footer*/
+
+footer {
+
+    text-align: center;
+    padding: 30px;
+    background: #000;
+    color: white;
+}

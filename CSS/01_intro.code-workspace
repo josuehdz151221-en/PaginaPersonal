@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../../01_intro"
+		},
+		{
+			"path": "../../05_music"
+		},
+		{
+			"path": "../../HTML"
+		},
+		{
+			"path": "../../HTML2"
+		},
+		{
+			"path": "../../HTML3"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MiPagina"
+	}
+}
